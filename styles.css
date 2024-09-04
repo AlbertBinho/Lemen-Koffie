@@ -115,10 +115,21 @@ footer {
 .sobre-item {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
-    padding: 20px;
+    
     background-color: #ddc49e;
     
+}
+
+.title-vaga{
+    background-color: #b3382f;
+    text-align: center;
+    width: 20rem;
+}
+
+.text-vaga{
+    text-align: left;
+    width: 60rem;
+    color: #190409;
 }
 
 .sobre-item:nth-child(even) {
@@ -137,10 +148,15 @@ footer {
     text-align: left;
 }
 
-.sobre-text h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
+.sobre-text1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.sobre {
+    color: #6b270f;
+  
 }
 
 .sobre-text p {
@@ -159,11 +175,8 @@ footer {
     }
 }
 
-.fluxo {
-    width: 1300px;
-    height: 700px;
-    padding: 70px;
-}
+
+   
 
 .image {
     max-width: 500px;

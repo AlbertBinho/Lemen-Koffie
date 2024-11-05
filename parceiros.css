@@ -1,207 +1,185 @@
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    background-color: #800000;
 }
 
-header {
-    background-color: #6b270f;
-    color: #F2E8C6;
-    text-align: center;
-    padding: 50px;
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+    
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 20px;
-    text-align: right;
-}
-
-nav li {
-    display: inline;
-    margin: 0 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: #5e6228;
-    border-radius: 5px;
-}
-
-section {
-    padding: 40px;
-    background-color: #ddc49e;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgb(148, 5, 5);
-}
-
-section h2 {
-    color: #79091b;
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-section p {
-    font-size: 18px;
-    color: #372400;
-}
-
-.menu-container {
+.cabecalho__menu {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    gap: 80px;
+
 }
 
-.menu-item {
+
+.cabecalho__menu__link {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #82008E;
+    text-decoration: none;
+
+}
+
+.logoTipo {
+    width: 40%;
+}
+
+.icones {
+    
+    width: 60px;
+
+}
+
+
+
+/* Estilos gerais */
+.imagem_profissional {
+    box-sizing: border-box;
+    display: flex; /* Usa flexbox para layout */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha conforme necessário */
+    justify-content: space-between; /* Distribui os itens ao longo do espaço disponível */
+
+
+}
+
+.banner {
+    border-radius: 50px;
+    margin-top: 1.8%;
+    display: flex; /* Usa flexbox para layout */
+    justify-content: space-between; /* Distribui os itens ao longo do espaço disponível */
+    height: 1%; /* Altura */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha conforme necessário */
+    overflow: hidden;
+    height: 27vw; /* Altura relativa à largura do viewport */
+}
+
+
+
+body{ 
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+.apresentacao {
+    border-radius: 50px;
+    color: white;
+    background-color: #800000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 7.5%;
+
+}
+
+
+
+.menina {
+    width: 40%; /* Altere para o tamanho que desejar */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.apresentacao__conteudo {
+
+    width: 615px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex-basis: calc(33.333% - 20px);
-    margin: 10px;
-    box-sizing: border-box;
+    gap: 40px;
 }
 
-.menu-item img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
 }
 
-.menu-item h3 {
+.apresentacao__conteudo__titulo__sobre {
+    color: #22D4FD;
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.destaque {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo__paragrafo {
     font-size: 24px;
-    color: #190409;
-    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.menu-item p {
-    font-size: 18px;
-    color: #555;
-    max-width: 300px;
+.apresentacao__conteudo__botao {
+    
+    gap: 32px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-footer {
-    background-color: #6b270f;
-    color: #fff;
+.apresentacao__links__subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+
+
+
+
+.apresentacao__links__link {
+    background-color: rgb(48, 48, 48);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
     text-align: center;
-    padding: 10px;
-    width: 100%;
+    border: 2px solid  #ffffff;;
+    /* background-color: #22D4FD; */
+    width: 350px;
+    border-radius: 16px;
+    font-size: 24px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
-.imagem {
-    width: 100%;
-    height: auto;
+.apresentacao__links__link:hover {
+    background-color: #272727;
 }
 
-.logo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    max-width: 300px;
-    max-height: 250px;
-}
-
-.sobre-item {
+.produto {
     display: flex;
     align-items: center;
-    
-    background-color: #ddc49e;
-    
+    justify-content: space-between;
+    margin: 1% 15% 10%;
 }
 
-.title-vaga{
-    background-color: #b3382f;
+.menina {
+    gap: 30px;
+    margin-right: 20px;
+}
+
+
+
+.destaque {
+    color: #22D4FD;
+}
+
+.rodape {
+    
+    padding: 70px;
+    color: rgb(255, 255, 255);
+    background-color: #75127E;
     text-align: center;
-    width: 20rem;
-}
-
-.text-vaga{
-    text-align: left;
-    width: 60rem;
-    color: #190409;
-}
-
-.sobre-item:nth-child(even) {
-    flex-direction: row-reverse;
-}
-
-.sobre-item img {
-    max-width: 40%;
-    height: auto;
-    border-radius: 10px;
-    margin: 0 20px;
-}
-
-.sobre-text {
-    flex: 1;
-    text-align: left;
-}
-
-.sobre-text1 {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
-}
-
-.sobre {
-    color: #6b270f;
-  
-}
-
-.sobre-text p {
-    font-size: 18px;
-    color: #555;
-}
-
-@media (max-width: 768px) {
-    .sobre-item {
-        flex-direction: column;
-    }
-
-    .sobre-item img {
-        max-width: 100%;
-        margin: 0 0 20px 0;
-    }
-}
-
-
-   
-
-.image {
-    max-width: 500px;
-    height: auto;
-    width: 100%;
-}
-
-@media (max-width: 900px) {
-    .menu-item {
-        flex-basis: calc(50% - 20px);
-    }
-
-    .logo {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-@media (max-width: 470px) {
-    .menu-item {
-        flex-basis: 100%;
-    }
-
-    .logo {
-        width: 50px;
-        height: 50px;
-    }
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
 }
